@@ -36,28 +36,51 @@ label {
   padding: 2px 6px;
   transition: opacity 0.15s;
 }
-label:focus {
-  opacity: 1;
-}
 
 input {
   background-color: white;
   height: 50px;
   width: 256px;
   display: block;
-  margin-bottom: 24px;
+  margin-bottom: 6px;
   border: solid 1px gray;
   padding-left: 20px;
   border-radius: 5px;
   outline: none;
   position: relative;
 }
-#sign-up-button {
+
+input:focus {
+  border-color: rgb(0, 76, 145);
+}
+input:focus::placeholder {
+  color: transparent;
+}
+.sign-up-button {
   font-size: 20px;
   color: white;
-  background-color: green;
+  background-color: rgb(70, 129, 70);
   border: none;
   border-radius: 5px;
   height: 50px;
   width: 280px;
+}
+.warning {
+  font-size: 14px;
+  color: red;
+  padding-left: 8px;
+  margin-bottom: 12px;
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+input.red {
+  border: solid 2px red;
+}
+input.green {
+  border: solid 2px green;
+}
+.submit {
+  background-color: green;
 }

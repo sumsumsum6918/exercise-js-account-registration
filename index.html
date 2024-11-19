@@ -11,43 +11,72 @@
       <h1>Register your account</h1>
 
       <form action="submit">
-        <label tabindex="0" id="name-label"> Name </label>
+        <label id="name-label" onclick="clickElement('name')"> Name </label>
         <input
           type="text"
           required
           id="name-input"
           placeholder="Name"
-          onclick="clickElement('name')"
+          onfocus="clickElement('name')"
         />
+        <p class="warning" id="name-warning">* Please fill in this field.</p>
 
-        <label id="username-label"> Username</label>
+        <label id="username-label" onclick="clickElement('username')">
+          Username</label
+        >
         <input
           type="text"
           required
           id="username-input"
           placeholder="Username"
+          onfocus="clickElement('username')"
         />
+        <p class="warning" id="username-warning">
+          * Please fill in this field.
+        </p>
 
-        <label id="email-label">Email </label>
-        <input type="email" required id="email-input" placeholder="Email" />
+        <label id="email-label" onclick="clickElement('email')">Email </label>
+        <input
+          type="email"
+          required
+          id="email-input"
+          placeholder="email@example.com"
+          onfocus="clickElement('email')"
+        />
+        <p class="warning" id="email-warning">* Please fill in this field.</p>
 
-        <label id="password-label">Password </label>
+        <label id="password-label" onclick="clickElement('password')"
+          >Password
+        </label>
         <input
           type="password"
           required
           id="password-input"
           placeholder="Password"
+          onfocus="clickElement('password')"
         />
+        <p class="warning" id="password-warning">
+          * Please fill in this field.
+        </p>
 
-        <label id="confirm-password-label"> Confirm Password </label>
+        <label
+          id="confirm-password-label"
+          onclick="clickElement('confirm-password')"
+        >
+          Confirm Password
+        </label>
         <input
           type="password"
           id="confirm-password-input"
           placeholder="Confirm password"
           required
+          onfocus="clickElement('confirm-password')"
         />
+        <p class="warning" id="confirm-password-warning">
+          * Please fill in this field.
+        </p>
 
-        <button type="submit" id="sign-up-button">Sign up</button>
+        <button type="button" class="sign-up-button">Sign up</button>
       </form>
     </div>
     <script src="main.js"></script>
