@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <div class="container">
+      <h1>Register your account</h1>
+
+      <form action="submit">
+        <label tabindex="0" id="name-label"> Name </label>
+        <input
+          type="text"
+          required
+          id="name-input"
+          placeholder="Name"
+          onclick="clickElement('name')"
+        />
+
+        <label id="username-label"> Username</label>
+        <input
+          type="text"
+          required
+          id="username-input"
+          placeholder="Username"
+        />
+
+        <label id="email-label">Email </label>
+        <input type="email" required id="email-input" placeholder="Email" />
+
+        <label id="password-label">Password </label>
+        <input
+          type="password"
+          required
+          id="password-input"
+          placeholder="Password"
+        />
+
+        <label id="confirm-password-label"> Confirm Password </label>
+        <input
+          type="password"
+          id="confirm-password-input"
+          placeholder="Confirm password"
+          required
+        />
+
+        <button type="submit" id="sign-up-button">Sign up</button>
+      </form>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
